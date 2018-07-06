@@ -7,7 +7,6 @@ public class BinarySearch {
 		int query = 13;
 		
 		System.out.println(binarySearch(query,dataSet));
-
 	}
 
 	public static int binarySearch(int x, int[] a) {
@@ -17,21 +16,22 @@ public class BinarySearch {
 		
 		while(p<=r) {
 			q = (int) Math.floor((p+r)/2);
-			if(a[q]==x) { //did we find the value?
+			
+			//my solution
+			/*if(a[q]==x) { //did we find the value?
 				return q;
 			}
 			if(a[q]>x) { //the upper bound is too high, reduce it
 				r=q-1;
 			} else {
 				p=q+1; //the lower bound is too low, raise it
-			}
+			}*/
+			
+			//instructor solution
+			if(x < a[q]) r = q-1;
+			else if (x > a[q]) p=q+1;
+			else return q;				
 		}
-//
-
-
-
 		return -1;
-
 	}
-
 }
