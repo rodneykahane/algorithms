@@ -1,12 +1,15 @@
 package algo.recursion;
 
+
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		
-		reduceByOne(10);
+		int[] a = {5,4,2,8,3,9,1,7};
+		RecursiveLinearSearch search = new RecursiveLinearSearch();
+		
+		//reduceByOne(10);
+		System.out.println(search.rLinearSearch(a,0,1));
 	}
 	
 	public static void reduceByOne (int n) {
