@@ -13,9 +13,5 @@ public class RecursiveLinearSearch {
 		return rLinearSearch(a,i+1,x);
 	}//end rLinearSearch
 
-<<<<<<< HEAD
 }//end class
-=======
-}
-//
->>>>>>> branch 'master' of https://github.com/rodneykahane/algorithms.git
+
