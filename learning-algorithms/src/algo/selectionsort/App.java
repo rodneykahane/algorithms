@@ -19,10 +19,20 @@ public class App {
 	//swap A[i] with A[minimum]
 	public static int[] selectionSort(int[] a) {
 		int[] sortedArray;
+		int minimum;
+		
+		for(int i=0;i<a.length;i++) {
+			minimum=a[i];
+			
+			for(int j=0;j<a.length;j++) {
+				if (a[j] < minimum) {
+					minimum = a[j];
+				}
+			}
+		}
 		
 		
-		
-		return sortedArray;
+		return a;
 	}//end selectionSort
 
 }//end class
