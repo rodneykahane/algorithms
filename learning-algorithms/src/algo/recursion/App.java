@@ -12,7 +12,7 @@ public class App {
 		
 		//reduceByOne(10);
 		//System.out.println(search.rLinearSearch(a,0,1));
-		System.out.println(search.rBinarySearch(a, 0, a.length-1, 8));
+		System.out.println(search.rBinarySearch(a, 0, a.length-1,9 ));
 	}
 	
 	public static void reduceByOne (int n) {
