@@ -11,7 +11,7 @@ public class App {
 			System.out.print(myArray[i]+", ");
 		}
 
-	}//end main
+	}//end main/
 	
 //for i=0 to A.length-1
 	//set minimum to i
