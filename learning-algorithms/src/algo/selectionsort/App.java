@@ -11,36 +11,26 @@ public class App {
 			System.out.print(myArray[i]+", ");
 		}
 
-	}//end main/
-	
-//for i=0 to A.length-1
-	//set minimum to i
-	//for j=i+1 to A.length
-	   //if A[j] < A[minimum]
-			//set minimum to j
-	//swap A[i] with A[minimum]
+	}//end main
+
 	public static int[] selectionSort(int[] a) {				
-		
+			
 		for(int i=0;i<a.length-1;i++) {
 			int minimum = i;
 			
-			for(int j=0;j<a.length;j++) {
+			for(int j=i+1;j<a.length;j++) {
 				if (a[j] < a[minimum]) {
 					minimum = j;
-					//System.out.println("minimum is: "+ minimum);	
-					
-					
-				}
-				
-				
-			}
-			int tmp = a[i];				
-			a[i] = a[minimum];
-			a[minimum] = tmp;
-			System.out.println(Arrays.toString(a));
+															
+				}//end if
+			}//end for
 			
-		}
-		
+			//swapping old smallest for new smallest
+			int tmp = a[i];			
+			a[i] = a[minimum];
+			a[minimum] = tmp;			
+			
+		}//end for		
 		
 		return a;
 	}//end selectionSort
