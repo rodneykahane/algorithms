@@ -18,16 +18,14 @@ public class App {
 			
 			for(int j=i+1;j<a.length;j++) {
 				if (a[j] < a[minimum]) {
-					minimum = j;
-															
+					minimum = j;															
 				}//end if
 			}//end for
 			
 			//swapping old smallest for new smallest
 			int tmp = a[i];			
 			a[i] = a[minimum];
-			a[minimum] = tmp;			
-			
+			a[minimum] = tmp;	
 		}//end for		
 		
 		return a;
