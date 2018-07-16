@@ -16,8 +16,7 @@ public class App {
 		
 		for(int i=0;i<inputArray.length;i++) {
 			//System.out.print(inputArray[i]+",");;
-		}
-		
+		}		
 	}//end main
 
 }//end class
